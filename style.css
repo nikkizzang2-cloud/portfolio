@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: , "Pretendard Variable", Pretendard,
+    -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+    sans-serif;
+  
+}
+
+
+
+
+.left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+
+}
+
+.right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  left: 50%;
+}
+
+table {
+  width: 96%;
+  margin: auto;
+  margin-top: 6px;
+  text-align: left;
+  table-layout: fixed;
+}
+
+table,
+td,
+tr {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+details {
+  border-left: none;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.name {
+  display: inline-block;
+  font-size: 12.5pt;
+  padding: 12px;
+  margin-top: 3px;
+  font-weight: 400;
+}
+
+.Index {
+  display: inline-block;
+  color: grey;
+  font-size: 11pt;
+}
+
+.project {
+  border-left: 1px solid;
+  padding-left: 8px;
+  padding-bottom: 6px;
+  font-size: 11.7pt;
+}
+.project1{
+  border-left: 1px solid;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  font-size: 11.7pt;
+}
+
+
+.mini {
+  position: sticky;
+  top: 0px;             /* 화면 상단에 붙는 위치 */
+  z-index: 20;         /* 테이블보다 위에 오게 */
+  background-color: #fff;  /* 아래 내용 가리지 않도록 배경 흰색 */
+  
+  font-size: 9.5pt;
+  margin-left: 10px;
+  border-bottom: 1px solid;
+  width: 96%;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+
+.year {
+    width: 50px;          /* 고정 가로 */
+  min-width: 60px;
+  max-width: 60px;
+  vertical-align: top;
+  padding-left: 6px;
+  
+  padding-bottom: 6px;
+  font-size: 11.7pt;
+}
+
+.year1{
+    width: 50px;          /* 고정 가로 */
+  min-width: 60px;
+  max-width: 60px;
+  vertical-align: top;
+  padding-left: 6px;
+  
+  padding-bottom: 6px;
+  font-size: 11.7pt;
+}
+
+
+
+
+
+
+.sort1 {
+  width: 15%;
+  vertical-align: top;
+  padding-left: 0;
+}
+
+.sort2{
+  border-left: 1px solid;
+  width: 40px;
+  
+
+  padding-left: 8px;
+  padding-bottom: 4px;
+  font-size: 11.7pt;
+}
+
+.text {
+  padding: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  max-width: 30rem;
+  word-break:keep-all;
+}
+
+.caption {
+  margin-left: 9px;
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+
+
+
+
+
+.list-table,
+.list-table tr,
+.list-table td {
+  margin-top: 0; 
+  border-top: none;
+  border-bottom: none;}  
+  
+
+
+.list {
+  padding-left: 6px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  font-size: 10.8pt;
+  color:grey;
+  background-color: #eaeaea;
+ 
+}
+
+.about{ font-size: 11pt;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 6px;
+  
+  
+  line-height: 22px;
+  width: 67%;
+  word-break:keep-all;
+  }
+
+
+hr {
+  margin: auto;
+  width: 96%;
+  border: 0;               /* 기본 회색 선 제거 */
+  height: 1px;             /* 두께 */
+  background-color: #000;  /* 완전 검정 */
+}
+
+
+
+table tr:hover .year,
+table tr:hover .project,
+table tr:hover .sort1 span.project {
+  color: grey;
+}
+
+a{text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: grey;
+}
+
+.Index a {
+  text-decoration: none;
+  color: grey;
+}
+
+.Index a.active-tab {
+  color: red;   /* 현재 페이지 탭 */
+}
+
+
+
+/* ↓↓↓ details 애니메이션용 ↓↓↓ */
+
+.project-details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none; /* 기본 화살표 숨기기 */
+}
+
+/* JS에서 height를 제어함 */
+.details-content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition:
+    height 0.4s ease,
+    opacity 0.4s ease;
+}
+
+/* ↑↑↑ 여기까지 정확히 닫혀 있어야 함 ↑↑↑ */
+
+@media screen and (max-width: 704px) {
+  /* 반응형 스타일 필요하면 여기 */
+}
